@@ -33,7 +33,7 @@ class _Story extends State<Story> {
               child: Center(
                 child: Image(
                   // l'image doit être de taille : 1280 x 540
-                  image: AssetImage("images/image-$storyNumber.jpg"),
+                  image: AssetImage(histoire[storyNumber].storyImage),
                 ),
               ),
             )),
@@ -61,7 +61,7 @@ class _Story extends State<Story> {
               child: TextButton(
                   onPressed: () {
                     setState(() {});
-                    print("test Choix 1");
+                    storyNumber = histoire[storyNumber].choix1pointer;
                   },
                   style: TextButton.styleFrom(
                     primary: Colors.white,
@@ -82,9 +82,7 @@ class _Story extends State<Story> {
               child: TextButton(
                   onPressed: () {
                     setState(() {});
-                    print(
-                      "test Choix 2",
-                    );
+                    storyNumber = histoire[storyNumber].choix2pointer;
                   },
                   style: TextButton.styleFrom(
                     primary: Colors.white,
