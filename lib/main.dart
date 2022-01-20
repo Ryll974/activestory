@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'story.dart';
 
 void main() {
   runApp(
@@ -19,6 +20,7 @@ class Story extends StatefulWidget {
 }
 
 class _Story extends State<Story> {
+  int storyNumber = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -31,7 +33,7 @@ class _Story extends State<Story> {
               child: Center(
                 child: Image(
                   // l'image doit être de taille : 1280 x 540
-                  image: AssetImage("images/image-test.jpg"),
+                  image: AssetImage("images/image-$storyNumber.jpg"),
                 ),
               ),
             )),
@@ -41,7 +43,7 @@ class _Story extends State<Story> {
               padding: const EdgeInsets.all(8.0),
               child: Center(
                 child: Text(
-                  "Texte racontant la suite de l'histoire interactive",
+                  histoire[storyNumber].storyText,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -66,7 +68,7 @@ class _Story extends State<Story> {
                     backgroundColor: Colors.blue, // Background Color
                   ),
                   child: Text(
-                    "Choix 1",
+                    histoire[storyNumber].choix1,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20.0,
@@ -89,7 +91,7 @@ class _Story extends State<Story> {
                     backgroundColor: Colors.blue, // Background Color
                   ),
                   child: Text(
-                    "Choix 2",
+                    histoire[storyNumber].choix2,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20.0,
