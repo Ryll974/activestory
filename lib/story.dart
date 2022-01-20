@@ -10,12 +10,12 @@ class Story {
 }
 
 final List<Story> histoire = [
-  Story(0, "images/image-0.jpg", "texte histoire 0", "Story 0 choix 1",2, "Story 0 choix 2",1,),
-  Story(1, "images/image-1.jpg", "texte histoire 1", "Story 1 choix 1",2, "Story 1 choix 2",3,),
-  Story(2, "images/image-2.jpg", "texte histoire 2", "Story 2 choix 1",5, "Story 2 choix 2",4,),
-  Story(3, "images/image-3.jpg", "texte histoire 3", "Story 3 choix 1",6, "Story 3 choix 2",6,),
-  Story(4, "images/image-4.jpg", "texte histoire 4", "Story 4 choix 1",6, "Story 4 choix 2",6,),
-  Story(5, "images/image-5.jpg", "texte histoire 5", "Story 5 choix 1",6, "Story 5 choix 2",6,),
-  Story(6, "images/image-999.jpg", "terminé", "...",6, "...",6,),
+  Story(0, "images/image-0.jpg", "Vous venez de crevez un pneu à St André. Vous n'avez pas de téléphone vous décidez de faire du stop. Une ford fiesta rouge s'arrête et le conducteur vous demande si vous voulez qu'il vous dépanne.", "Vous le remerciez et vous montez dans sa voiture",2, "Vous lui demandez s'il n'est pas un meurtrier avant !",1,),
+  Story(1, "images/image-1.jpg", "Il acquiesce de la tête, sans faire attention à la question.", "Au moins il est honnête. Vous montez ! ",2, "Attends, mais je sais comment changer un pneu voyons !",3,),
+  Story(2, "images/image-2.jpg", "Lorsqu'il commence à conduire, il vous demande d'ouvrir la boite à gant. À l’intérieur, vous trouvez un couteau ensanglanté, deux doigts coupés et un CD de T-Matt.", "J'adore T-Matt, je lui donne le CD.",5, "C'est lui ou moi, je prends le couteau et je le poignarde.",4,),
+  Story(3, "images/image-3.jpg", "Woaw ! Quelle évasion ! ", "Recommencer !",0, "...",6,),
+  Story(4, "images/image-4.jpg", "En traversant la route du littoral, vous réfléchissez à la sagesse douteuse de poignarder quelqu’un pendant qu’il conduit une voiture dans laquelle vous êtes.", "Recommencer !",0, "...",6,),
+  Story(5, "images/image-5.jpg", "Vous vous faites un bon dalon et vous chantez le dernier son de T-matt ensemble. Il vous dépose à Cambaie et il vous demande si vous connaissez un bon endroit pour jeter un corps.", "Recommencer !",0, "...",6,),
+  Story(6, "images/image-999.jpg", "terminé", "Recommencer",0, "...",6,),
 ];
 
