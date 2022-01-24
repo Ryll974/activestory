@@ -24,7 +24,7 @@ class _Story extends State<Story> {
   bool ShowButton = true;
 
   void ShowOrHide() {
-    if (histoire[storyNumber].choix1 == "Invisible!") {
+    if (histoire[storyNumber].choix1 == "") {
       ShowButton = false;
     } else {ShowButton = true;}
   }
