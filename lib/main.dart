@@ -21,8 +21,17 @@ class Story extends StatefulWidget {
 
 class _Story extends State<Story> {
   int storyNumber = 0;
+  bool ShowButton = true;
+
+  void ShowOrHide() {
+    if (histoire[storyNumber].choix1 == "Invisible!" || histoire[storyNumber].choix2 == "Invisible!") {
+      ShowButton = false;
+    } else {ShowButton = true;}
+  }
+
   @override
   Widget build(BuildContext context) {
+    ShowOrHide();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -67,25 +76,28 @@ class _Story extends State<Story> {
             flex: 1,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextButton(
-                  onPressed: () {
-                    setState(() {});
-                    storyNumber = histoire[storyNumber].choix1pointer;
-                  },
-                  style: TextButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12), // <-- Radius
+              child: Visibility(
+                visible: ShowButton,
+                child: TextButton(
+                    onPressed: () {
+                      setState(() {});
+                      storyNumber = histoire[storyNumber].choix1pointer;
+                    },
+                    style: TextButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12), // <-- Radius
+                      ),
+                      primary: Colors.white,
+                      backgroundColor: Colors.blue, // Background Color
                     ),
-                    primary: Colors.white,
-                    backgroundColor: Colors.blue, // Background Color
-                  ),
-                  child: Text(
-                    histoire[storyNumber].choix1,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                    ),
-                  )),
+                    child: Text(
+                      histoire[storyNumber].choix1,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20.0,
+                      ),
+                    )),
+              ),
             )),
         Expanded(
             flex: 1,
