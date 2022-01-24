@@ -37,7 +37,7 @@ class _Story extends State<Story> {
                       color: Colors.blue,
                       width: 8,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(12.0),
                   ),
                   child: Image(
                     // l'image doit être de taille : 1280 x 540
@@ -73,6 +73,9 @@ class _Story extends State<Story> {
                     storyNumber = histoire[storyNumber].choix1pointer;
                   },
                   style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12), // <-- Radius
+                    ),
                     primary: Colors.white,
                     backgroundColor: Colors.blue, // Background Color
                   ),
@@ -94,6 +97,9 @@ class _Story extends State<Story> {
                     storyNumber = histoire[storyNumber].choix2pointer;
                   },
                   style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12), // <-- Radius
+                    ),
                     primary: Colors.white,
                     backgroundColor: Colors.blue, // Background Color
                   ),

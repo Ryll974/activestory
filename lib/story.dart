@@ -16,6 +16,6 @@ final List<Story> histoire = [
   Story(3, "images/image-3.jpg", "Woaw ! Quelle évasion ! ", "Recommencer !",0, "...",6,),
   Story(4, "images/image-4.jpg", "En traversant la route du littoral, vous réfléchissez à la sagesse douteuse de poignarder quelqu’un pendant qu’il conduit une voiture dans laquelle vous êtes.", "Recommencer !",0, "...",6,),
   Story(5, "images/image-5.jpg", "Vous vous faites un bon dalon et vous chantez le dernier son de T-matt ensemble. Il vous dépose à Cambaie et il vous demande si vous connaissez un bon endroit pour jeter un corps.", "Recommencer !",0, "...",6,),
-  Story(6, "images/image-999.jpg", "terminé", "Recommencer",0, "...",6,),
+  Story(6, "images/image-999.jpg", "Merci d'avoir joué", "Recommencer",0, "...",6,),
 ];
 
