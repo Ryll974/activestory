@@ -31,9 +31,18 @@ class _Story extends State<Story> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Center(
-                child: Image(
-                  // l'image doit être de taille : 1280 x 540
-                  image: AssetImage(histoire[storyNumber].storyImage),
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.blue,
+                      width: 8,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Image(
+                    // l'image doit être de taille : 1280 x 540
+                    image: AssetImage(histoire[storyNumber].storyImage),
+                  ),
                 ),
               ),
             )),
